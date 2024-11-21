@@ -1,0 +1,13 @@
+/* styles.module.css */
+
+/* Кнопка для светлой темы */
+.boxLight {
+    /*background-color: rgb(242, 245, 253) !important;*/
+    border: 1px solid rgb(86,103,112)!important;
+}
+
+/* Кнопка для светлой темы */
+.boxDark {
+    /*background-color: rgba(31,37,40, 0.7) !important;*/
+    border: 1px solid rgb(86,103,112)!important;
+}

@@ -1,0 +1,23 @@
+/*Фон диалогового окна*/
+.dialogContentLight {
+  /*background-color: rgb(210, 210, 210);*/
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.dialogContentDark {
+  /*background-color: rgb(41, 41, 42);*/
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Устанавливаем цвет текста для ячеек с классом summaryCell */
+/*.tableLight td.summaryCell {*/
+/*  color: #4f4f4f;*/
+/*}*/
+/*.tableDark td.summaryCell {*/
+/*  color: #999;*/
+/*}*/

@@ -1,0 +1,184 @@
+/* Основные стили для таблицы */
+.tableLight {
+    font-family: Helvetica; /* Устанавливаем шрифт */
+    font-size: 12px; /* Устанавливаем размер шрифта */
+    border-collapse: separate; /* Отделяем границы ячеек */
+    border-spacing: 0; /* Убираем пространство между ячейками */
+    width: 100%; /* Занимаем всю доступную ширину */
+    cursor: default; /* Устанавливаем курсор по умолчанию */
+    overflow: auto;
+}
+.tableDark {
+    font-family: Helvetica; /* Устанавливаем шрифт */
+    font-size: 12px; /* Устанавливаем размер шрифта */
+    border-collapse: separate; /* Отделяем границы ячеек */
+    border-spacing: 0; /* Убираем пространство между ячейками */
+    width: 100%; /* Занимаем всю доступную ширину */
+    cursor: default; /* Устанавливаем курсор по умолчанию */
+}
+
+/* Основные стили для ячеек заголовка */
+.tableLight th {
+    /*background: rgb(245, 245, 245); !* Устанавливаем фон *!*/
+    font-weight: normal; /* Устанавливаем нормальный вес шрифта */
+    color: #000000; /* Устанавливаем цвет текста */
+    text-align: center;
+    padding: 5px; /* Убираем отступы */
+    border-right: 1px solid grey; /* Устанавливаем правую границу */
+    border-bottom: 1px solid grey; /* Устанавливаем нижнюю границу */
+    position: sticky;
+    /*top: 0; !* Приклеиваем заголовок к верху таблицы *!*/
+    /*z-index: 1; !* Устанавливаем z-index, чтобы заголовок был поверх других элементов;*/
+}
+.tableDark th {
+    /*background: rgb(41, 41, 42); !* Устанавливаем фон *!*/
+    font-weight: normal; /* Устанавливаем нормальный вес шрифта */
+    color: white; /* Устанавливаем цвет текста */
+    text-align: center;
+    padding: 5px; /* Убираем отступы */
+    border-right: 1px solid grey; /* Устанавливаем правую границу */
+    border-bottom: 1px solid grey; /* Устанавливаем нижнюю границу */
+}
+
+/*!* Убираем нижнюю границу у первой строки заголовков *!*/
+/*.tableLight thead tr:first-child th {*/
+/*    border-bottom: none;*/
+/*    padding-bottom: 20px;*/
+/*    padding-top: 0;*/
+/*    font-size: 18px;*/
+/*}*/
+/*.tableDark thead tr:first-child th {*/
+/*    border-bottom: none;*/
+/*    padding-bottom: 20px;*/
+/*    padding-top: 0px;*/
+/*    font-size: 18px;*/
+/*}*/
+
+
+/* Убираем правую границу у последней ячейки в строке */
+.tableLight th:last-child {
+    border-right: none;
+}
+.tableDark th:last-child {
+    border-right: none;
+}
+
+/* Убираем правую границу у последней ячейки в строке */
+.tableLight td:last-child {
+    border-right: none;
+}
+.tableDark td:last-child {
+    border-right: none;
+}
+
+
+/* Устанавливаем ширину и высоту для третьей колонки */
+.tableLight td:nth-child(1) {
+    /*width: 100px; !* Устанавливаем ширину *!*/
+    text-align: start; /* Выравниваем текст по центру */
+}
+.tableDark td:nth-child(1) {
+    /*width: 100px; !* Устанавливаем ширину *!*/
+    text-align: start; /* Выравниваем текст по центру */
+}
+
+/* Основные стили для ячеек тела таблицы */
+.tableLight td {
+    border-right: 1px solid grey; /* Устанавливаем правую границу */
+    padding: 5px; /* Устанавливаем отступы */
+    vertical-align: top; /* Выравниваем содержимое по верхнему краю */
+    overflow: hidden; /* Скрываем содержимое, выходящее за пределы ячейки */
+    white-space: pre-line; /* Сохраняем переносы строк */
+    background-clip: padding-box; /* Фон применяется только к области padding */
+    background-color: transparent;
+    color: #000000; /* Устанавливаем цвет текста */
+    text-align: center; /* Выравниваем текст по центру */
+    text-wrap: none;
+}
+
+.tableDark td {
+    border-right: 1px solid grey; /* Устанавливаем правую границу */
+    padding: 5px 10px; /* Устанавливаем отступы */
+    vertical-align: top; /* Выравниваем содержимое по верхнему краю */
+    overflow: hidden; /* Скрываем содержимое, выходящее за пределы ячейки */
+    white-space: nowrap; /* Сохраняем переносы строк */
+    background-clip: padding-box; /* Фон применяется только к области padding */
+    background-color: transparent;
+    color: #ffffff; /* Устанавливаем цвет текста */
+    text-align: center; /* Выравниваем текст по центру */
+}
+
+/* Убираем нижнюю границу у последней строки */
+.tableLight tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tableDark tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/*Фон диалогового окна*/
+.dialogContentLight {
+    /*background-color: rgb(245, 245, 245);*/
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dialogContentDark {
+    background-color: #133549;
+    solid-opacity: 0;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.boxLight {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+}
+/*.boxLight::-webkit-scrollbar {*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    z-index: 1;*/
+/*}*/
+/*.boxLight::-webkit-scrollbar-track {*/
+/*    background-color: rgba(10, 142, 219, 0);*/
+/*}*/
+/*.boxLight::-webkit-scrollbar-thumb {*/
+/*    background-color: rgb(255, 255, 255);*/
+/*    border-radius: 1px;*/
+/*}*/
+
+.boxDark {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+}
+/*.boxDark::-webkit-scrollbar {*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    z-index: 1;*/
+/*}*/
+/*!*Линия скрола*!*/
+/*.boxDark::-webkit-scrollbar-track {*/
+/*    background-color: rgba(10, 142, 219, 0);*/
+/*}*/
+/*!*Скрол*!*/
+/*.boxDark::-webkit-scrollbar-thumb {*/
+/*    background-color: rgb(0, 0, 0);*/
+/*    border-radius: 1px;*/
+/*}*/
+
+/* Устанавливаем цвет текста для ячеек с классом summaryCell */
+/*.tableLight td.summaryCell {*/
+/*  color: #4f4f4f;*/
+/*}*/
+/*.tableDark td.summaryCell {*/
+/*  color: #999;*/
+/*}*/

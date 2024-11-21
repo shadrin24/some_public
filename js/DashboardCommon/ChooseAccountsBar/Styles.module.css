@@ -1,0 +1,135 @@
+/* styles.module.css */
+
+/* Кнопка для светлой темы */
+.btnLight {
+    margin-right: 5px !important;
+    box-shadow: none !important;
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 4px !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+.btnLight:hover {
+    background-color: lightgray !important;
+    box-shadow: none !important;
+}
+
+.btnLight p {
+    color: black;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Кнопка для темной темы */
+.btnDark {
+    margin-right: 5px !important;
+    box-shadow: none !important;
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 4px !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+.btnDark:hover {
+    background-color: grey !important;
+    box-shadow: none !important;
+}
+
+.btnDark p {
+    color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Текст метрик */
+.metricTextDark {
+    color: #ffffff;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.metricTextLight {
+    color: #000000;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Значения метрик */
+.metricCountDark {
+    color: #0b9881;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: clip;
+    text-align: center;
+}
+
+.metricCountLight {
+    color: #0b9881;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: clip;
+    text-align: center;
+}
+
+.list {
+    align-items: center;
+    bottom: 0px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.list ::-webkit-scrollbar {
+    /*display: none; !* скрыть скролбар *!*/
+    width: 5px;
+}
+
+.list ::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.list ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1px;
+}
+
+.box {
+    height: calc(100% - 25px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*border: 1px solid green;*/
+}
+
+/*.box ::-webkit-scrollbar {*/
+/*    !*display: none !important; !* скрыть скролбар *!*!*/
+/*    width: 50px !important;*/
+/*}*/
+
+/*.box ::-webkit-scrollbar-track {*/
+/*    background-color: rgba(255, 255, 255, 0.1) !important;*/
+/*}*/
+
+/*.box ::-webkit-scrollbar-thumb {*/
+/*    background-color: rgba(255, 255, 255, 0.5);*/
+/*    border-radius: 1px !important;*/
+/*}*/
+/*.MuiAccordion-root {*/
+/*    background-color: red;*/
+/*}*/
